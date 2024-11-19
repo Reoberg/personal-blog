@@ -1,0 +1,43 @@
+$general-bg: #0E0E0E;
+$general-header-color: #ffff;
+$general-text-color: #ffff;
+
+body {
+    background-color: $general-bg;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  // Header
+  .header{
+    display: flex;
+    justify-content: space-between;
+      nav{
+        display: flex;
+        justify-self: center;
+        margin: 5px;
+          .nav-element{
+            color: aqua;
+            padding: 5px;
+          }
+      }
+     
+  }
+  
+  // HOME 
+.home{
+
+  section{
+    min-height: 100vh;
+    justify-items: center;
+    align-content: center;
+    color: aliceblue;
+  }
+
+}
+
+
