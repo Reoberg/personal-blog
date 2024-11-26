@@ -1,0 +1,66 @@
+{
+    "workExperience": [
+      {
+        "company": "Gameflex",
+        "position": "Software Engineer",
+        "duration": "September 2021 -  August 2023",
+        "responsibilities": [
+          "Developed scalable web applications",
+          "Led frontend development team",
+          "Implemented modern React architecture"
+        ]
+      },
+      {
+        "company": "Gameflex", 
+        "position": "SE Intern",
+        "duration": "Jun 2021 - July 2021",
+        "responsibilities": [
+          "Assisted in web application development",
+          "Maintained existing codebase",
+          "Collaborated with cross-functional teams"
+        ]
+      },
+      {
+        "company": "Teknoform", 
+        "position": "ME Intern",
+        "duration": "Jun 2020 - July 2020",
+        "responsibilities": [
+          "Assisted in web application development",
+          "Maintained existing codebase",
+          "Collaborated with cross-functional teams"
+        ]
+      }
+    ],
+    "education": [
+        {
+            "institution": "Birkbeck, University of London",
+            "degree": "MSc Advanced Computing",
+            "graduationYear": 2024
+        },
+        {
+            "institution": "Dogus University",
+            "degree": "Bachelor's Degree in Computer Engineering",
+            "graduationYear": 2023
+        },
+        {
+            "institution": "Dogus University",
+            "degree": "Bachelor's Degree in Mechanical Engineering",
+            "graduationYear": 2022
+        },
+        {
+            "institution": "Cracow University of Technology",
+            "degree": "Erasmus+",
+            "graduationYear": 2020
+        }
+    
+      
+    ],
+    "skills": [
+      "React", 
+      "JavaScript", 
+      "TypeScript", 
+      "Node.js", 
+      "Git", 
+      "Tailwind CSS"
+    ]
+  }
