@@ -73,6 +73,37 @@ body {
           color: $text-color;
         }
       }
+      .line {
+        display: block;
+        height: 2px; /* Thickness of the line */
+        background-color: #ccc; /* Line color */
+        max-width: 100%; /* Line length */
+        margin: 40px ; /* Space around the line */
+      }
+      .connection-links{
+        display: block;
+        justify-items: center;
+        .social-links {
+          display: flex;
+          gap: 0.5rem;
+
+          a {
+              display: flex;
+              align-items: center;
+              color: $text-color;
+              text-decoration: none;
+              transition: color 0.3s ease;
+
+              svg {
+                  margin-right: 0.5rem;
+              }
+
+              &:hover {
+                  color: $primary-color;
+              }
+          }
+      }
+    }
     }
   
     .cvSection {

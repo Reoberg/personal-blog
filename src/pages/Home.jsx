@@ -2,6 +2,7 @@
 import cvData from "../CV.json"
 import React, { useEffect, useRef } from 'react';
 import Header from '../components/Header';
+import { FaGithub, FaInstagram, FaLinkedin, FaEnvelope } from "react-icons/fa6";
 
 
 
@@ -19,7 +20,6 @@ function Home (){
 
     return(
       <React.Fragment>
-
       <Header scrollToSection={scrollToSection} sectionRefs={sectionRefs} />
       <div className="home">
         <section className="helloSection" ref={sectionRefs.hello}>
@@ -33,6 +33,21 @@ function Home (){
               and Kubernetes.Have recently completed a master’s degree in Advanced 
               Computing with adissertation project about Multi-cloud Deployer in Kubernetes.</p>
           </div>
+          <span class="line"></span>
+          <div className="connection-links">
+                    <h4>Connect With Me</h4>
+                    <div className="social-links">
+                        <a href="https://github.com/Reoberg" target="_blank" rel="noopener noreferrer">
+                            <FaGithub /> GitHub
+                        </a>
+                        <a href="https://linkedin.com/in/onuroziskender" target="_blank" rel="noopener noreferrer">
+                            <FaLinkedin /> LinkedIn
+                        </a>
+                        <a href="mailto:onuroziskender@outlook.com">
+                            <FaEnvelope /> Email
+                        </a>
+                    </div>
+                </div>
          
 
         </section>
