@@ -10,29 +10,16 @@ function Footer(){
                     <p>Software Developer | Cloud Technologies Enthusiast</p>
                 </div>
 
-                <div className="footer-center">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-
                 <div className="footer-right">
                     <h4>Connect With Me</h4>
                     <div className="social-links">
-                        <a href="https://instagram.com/your_username" target="_blank" rel="noopener noreferrer">
-                            <FaInstagram /> Instagram
-                        </a>
-                        <a href="https://github.com/your_username" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/Reoberg" target="_blank" rel="noopener noreferrer">
                             <FaGithub /> GitHub
                         </a>
-                        <a href="https://linkedin.com/in/your_username" target="_blank" rel="noopener noreferrer">
+                        <a href="https://linkedin.com/in/onuroziskender" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin /> LinkedIn
                         </a>
-                        <a href="mailto:your.email@example.com">
+                        <a href="mailto:onuroziskender@outlook.com">
                             <FaEnvelope /> Email
                         </a>
                     </div>
