@@ -2,8 +2,7 @@ import React from "react";
 
 function Header ({scrollToSection, sectionRefs}) {
     return(
-        <React.Fragment>
-             <div className="header "> 
+             <header className="header"> 
                 <div className="name ">
                     <h2> Onur Öziskender </h2>  
                 </div>
@@ -12,8 +11,7 @@ function Header ({scrollToSection, sectionRefs}) {
                     <div className="nav-element" onClick={() => scrollToSection(sectionRefs.works)}>Portfolio</div>
                     <div className="nav-element" onClick={() => scrollToSection(sectionRefs.cv)}>CV</div>
                 </nav>
-            </div>
-        </React.Fragment>
+            </header>
     );
 
 }

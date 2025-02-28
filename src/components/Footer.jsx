@@ -7,7 +7,7 @@ function Footer(){
             <div className="footer-content">
                 <div className="footer-left">
                     <h3>Onur</h3>
-                    <p>Software Developer | Cloud Technologies Enthusiast</p>
+                    <p>Software Developer | Node.js | C# </p>
                 </div>
 
                 <div className="footer-right">

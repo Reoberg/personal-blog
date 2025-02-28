@@ -1,8 +1,10 @@
 
 import cvData from "../CV.json"
-import React, { useEffect, useRef } from 'react';
+import portfolioData from "../Portfolio.json"
+import React, {useRef } from 'react';
 import Header from '../components/Header';
-import { FaGithub, FaInstagram, FaLinkedin, FaEnvelope } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa6";
+
 
 
 
@@ -21,17 +23,18 @@ function Home (){
     return(
       <React.Fragment>
       <Header scrollToSection={scrollToSection} sectionRefs={sectionRefs} />
+
       <div className="home">
         <section className="helloSection" ref={sectionRefs.hello}>
           <div className="helloContainer">
             <h2>Hey! I am Onur</h2>
-            <p> I am Software Developer, hold a double major in Mechanical Engineering
-              and Computer Engineering. With 1.5 years of experience as a game 
-              developer, I am passionate about creating high-quality games and 
-              continuously improving my coding skills to meet the highest 
-              industry standards. I was recently focused on Cloud Technologies
-              and Kubernetes.Have recently completed a master’s degree in Advanced 
-              Computing with adissertation project about Multi-cloud Deployer in Kubernetes.</p>
+            <p> Passionate Software Developer with a double major in Mechanical and Computer Engineering and 2+
+                years of hands-on development experience. Recently completed a Master’s in Advanced Computing, with
+                a focus on multi-cloud Kubernetes deployment. Skilled in full-stack development (Vue.js, React, Node.js),
+                cloud computing (Azure, GCP, Kubernetes), and game development (Unity, C#). Proven ability to optimize
+                performance, develop scalable applications, and collaborate with cross-functional teams to deliver high-
+                quality software.
+            </p>
           </div>
           <span class="line"></span>
           <div className="connection-links">
@@ -52,8 +55,16 @@ function Home (){
 
         </section>
         <section className="myWorksSection" ref={sectionRefs.works}>
-                  <h2> Experiences </h2>
-                  
+          <h2> Portfolio </h2>
+          <div className="projects-grid">
+            {portfolioData.projects.map((project, index) => (
+              <div key={index} className="project-card" onClick={() => window.location.href = project.link}>
+                <img src={project.image} alt={project.title} className="project-image" />
+                <h3 className="project-title">{project.title}</h3>
+                <p className="project-info">{project.info}</p>
+              </div>
+            ))}
+          </div>
         </section>
         <section className="cvSection" ref={sectionRefs.cv}>
 
@@ -106,7 +117,7 @@ function Home (){
           {/* PDF Download Option */}
           <div className="cv-download">
             <a 
-              href="/path/to/your/resume.pdf" 
+              href="https://www.dropbox.com/scl/fi/eopcmihqze6merlhu72r7/Onur-Oziskender-CV.pdf?rlkey=75jivyiw9npay48u4sbzrnngx&st=r1vgddrn&dl=0" 
               download 
               className="cv-download-button"
             >
@@ -122,4 +133,5 @@ function Home (){
       </React.Fragment>
     )
 }
+
 export default Home;

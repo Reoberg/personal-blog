@@ -1,0 +1,28 @@
+{
+    "projects": [
+      {
+        "title": "Multi-cloud Kubernetes Deployer Dissertation Project",
+        "image": "https://cdn.paperpile.com/guides/img/thesis-proofreading-400x400.png?v=351",
+        "info": "A centralized deployer API for multi-cloud Kubernetes clusters using Terraform and Node.js.",
+        "link": "https://www.dropbox.com/scl/fi/lyscly5z9sact7kphnggg/MSc-Advance-Computing-Project-Onur-Oziskender.pdf?rlkey=8r84vz9y4ds8z209x3bc79w16&st=9tdta3q9&dl=0"
+      },
+      {
+        "title": "Oil Rich 3D",
+        "image": "/images/bloodrage-game.png",
+        "info": "3D digital version of Blood Rage board game with Unity and C#.",
+        "link": "https://apps.apple.com/ch/app/oil-rich-3d/id1636689892?l=en"
+      },
+      {
+        "title": "Personal Blog",
+        "image": "/images/personal-blog.png",
+        "info": "A personal blog website built with React, Node.js, and MongoDB.",
+        "link": "/projects/personal-blog"
+      },
+      {
+        "title": "Cloud Monitoring Dashboard",
+        "image": "/images/cloud-monitoring.png",
+        "info": "Monitoring and alert system for Kubernetes clusters using Grafana and Prometheus.",
+        "link": "/projects/cloud-monitoring"
+      }
+    ]
+   }

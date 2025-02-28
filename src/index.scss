@@ -3,8 +3,24 @@ $primary-color:#EF233C;
 $secondary-color:#D90429;
 $text-color: #2B2D42;
 $background-color: #edf2f4;
-$card-bg: #F0F7FA
-;
+$card-bg: #F0F7FA;
+$bg-img: url('../public/cool-background.png');
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../public/Fonts/Playfair_Display/static/PlayfairDisplay-BoldItalic.ttf') format('tff');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../public/Fonts/Lato/Lato-Thin.ttf') format('tff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+$font-heading: 'Playfair Display', serif;
+$font-body: 'Lato', sans-serif;
 
 @keyframes fadeInSlideUp {
   from {
@@ -20,18 +36,23 @@ $card-bg: #F0F7FA
 body {
     background-color: $background-color;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    font-family: $font-body;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
   }
 
   // Header
   .header{
     display: flex;
     justify-content:space-around;
+    position: fixed;
+    font-family: $font-heading; 
+    width: 100%;
     padding: 5px;
+    z-index: 2;
+    background-color: rgb(237, 242, 244 , 0.90) ;
+    object-fit: cover;
       nav{
         display: flex;
           .nav-element{
@@ -42,6 +63,7 @@ body {
       }
       .name{
         color: $primary-color;
+        
       }
      
   }
@@ -50,21 +72,20 @@ body {
   .home {
     section {
       min-height: 100vh;
-      align-content: start;
-    }
-
+      align-content: center;
+    }    
+    
     .helloSection{
-      align-content: start;
+      align-content: center;
       position: relative;
-     
-      
+      background-image: $bg-img center center;
+      background-size: cover;
       .helloContainer{
-      margin-top: 5%;
-      margin-left: 20%;
-      margin-right: 20%;
+      margin-left: 25%;
+      margin-right: 25%;
       padding: 1rem;
         h2 {
-          font-size: 100px;
+          font-size: 70px;
           color:$primary-color;
           justify-self: center;
           animation: fadeInSlideUp 1s ease-out;
@@ -200,6 +221,64 @@ body {
     }
     .myWorksSection{
       justify-items: center;
+
+      h2{
+        font-size: 2.5rem;
+        color: $primary-color;
+      }
+
+      .projects-grid {
+        display: grid;
+        max-width: 70%;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr); // 3 columns layout
+        gap: 1.5rem; // Space between cards
+        padding: 2rem;
+        justify-items: center;
+      
+        @media (max-width: 1024px) {
+          grid-template-columns: repeat(2, 1fr); // Adjust for tablets
+        }
+      
+        @media (max-width: 768px) {
+          grid-template-columns: 1fr; // Stack cards on small screens
+        }
+      
+        .project-card {
+          background-color: $card-bg;
+          border-radius: 8px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+          cursor: pointer;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+      
+          &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+          }
+      
+          .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: scale-down;
+          }
+      
+          .project-title {
+            font-family: $font-heading;
+            color: $primary-color;
+            font-size: 1.25rem;
+            margin: 1rem;
+          }
+      
+          .project-info {
+            font-family: $font-body;
+            color: $text-color;
+            font-size: 1rem;
+            padding: 0 1rem 1rem;
+          }
+        }
+      }
+      
     }
   
   }

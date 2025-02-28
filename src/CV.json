@@ -12,7 +12,7 @@
       },
       {
         "company": "Gameflex", 
-        "position": "SE Intern",
+        "position": "Computer Engineer Intern",
         "duration": "Jun 2021 - July 2021",
         "responsibilities": [
           "Assisted in web application development",
@@ -22,7 +22,7 @@
       },
       {
         "company": "Teknoform", 
-        "position": "ME Intern",
+        "position": "Mechanical Engineer Intern",
         "duration": "Jun 2020 - July 2020",
         "responsibilities": [
           "Assisted in web application development",
@@ -58,9 +58,9 @@
     "skills": [
       "React", 
       "JavaScript", 
-      "TypeScript", 
+      "C#", 
       "Node.js", 
-      "Git", 
-      "Tailwind CSS"
+      "Python", 
+      "AWS"
     ]
   }
